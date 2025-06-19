@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SpinsAmerica | Win like never before </title>
+   <style>
+
+    html{
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #18002a 0%, #3a0b36 100%);
+      color: #f3e6ff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    body{
+        padding: 10px;
+    }
+
+    .container {
+      background: rgba(24, 0, 42, 0.95);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px 0 rgba(255, 120, 60, 0.18), 0 0 32px 4px #ffb86c33;
+      padding: 2rem 1.5rem;
+      max-width: 400px;
+      height: fit-content;
+      width: 100%;
+      text-align: center;
+      border: 2px solid #ffb86c;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffb86c;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px #ffb86c, 0 0 2px #fff;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffb86c;
+      text-shadow: 0 0 8px #ffb86c, 0 0 2px #fff;
+    }
+
+     h2 {
+        font-size: 6.5rem;
+        margin-bottom: 0.5rem;
+        color: #ffb86c;
+        text-shadow: 0 0 16px #ffb86c, 0 0 2px #fff;
+    }
+
+
+       .log  {
+        font-size: 4vw;
+        margin-bottom: 0.5rem;
+        color: #ffb86c;
+        text-shadow: 0 0 16px #ffb86c, 0 0 2px #fff;
+    }
+
+    p {
+      color: #ffd6b3;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 4px #ffb86c;
+    }
+    form {
+      display: flex;
+      padding: 5px;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+      padding: 0.75rem;
+      border: 1px solid #ffb86c;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      background: #18002a;
+      color: #fff;
+      box-shadow: 0 0 8px #ffb86c44;
+      transition: border 0.2s, box-shadow 0.2s;
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #ffb86c;
+      box-shadow: 0 0 12px #ffb86c88;
+    }
+    button {
+      background: linear-gradient(90deg, #ffb86c 60%, #ff6e40 100%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      text-shadow: 0 0 4px #fff, 0 0 2px #ffb86c;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #ff6e40 60%, #ffb86c 100%);
+      box-shadow: 0 0 24px #ffb86ccc, 0 0 8px #fff;
+    }
+
+    button span{
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.85rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      text-shadow: 0 0 4px #fff, 0 0 2px #ffb86c;
+    }
+    button:hover span{
+      background: linear-gradient(90deg, #ff6e40 60%, #ffb86c 100%);
+      box-shadow: 0 0 24px #ffb86ccc, 0 0 8px #fff;
+    }
+
+    .privacy {
+      font-size: 0.85rem;
+      color: #ffd6b3;
+      margin-top: 1rem;
+      text-shadow: 0 0 2px #ffb86c;
+    }
+
+    .privacy a {
+      color: #ffb86c;
+    }
+
+    .footer-content {
+      font-size: 10px;
+      color: #ffd6b3;
+      background: rgba(24, 0, 42, 0.85);
+      border-radius: 8px;
+      box-shadow: 0 0 8px #ffb86c;
+    }
+
+    @media (max-width: 600px) {
+      .footer-content {
+        font-size: 0.5rem;
+      }
+      .container {
+        max-width: 100%;
+        padding: 1.25rem 0.55rem;
+      }
+      .imperial-script-regular {
+        font-family: "Imperial Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 8vw;
+      } 
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        color: #ffb86c;
+      }
+
+      .footer-content {
+        font-size: 0.5rem;
+      }
+
+      section {
+        flex-direction: column !important;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .span_s{
+        font-size: 6vw !important; 
+      }
+      .side-image {
+        display: none !important;
+      }
+    }
+
+    @media(max-width: 900px) {
+    }
+
+    /* Neon border for checkbox and links */
+    input[type="checkbox"] {
+      accent-color: #ffb86c;
+      box-shadow: 0 0 2px #ffb86c88;
+    }
+    a {
+      color: #ffb86c;
+      text-shadow: 0 0 2px #3a0b36, 0 0 8px #ffb86c;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .imperial-script-regular {
+      font-family: "Imperial Script", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45590864.js"></script>
+
+
+</head>
+<body>
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1.5rem; width: 100vw;">
+
+       <div style="text-align: center; ">
+              <h2 class="imperial-script-regular" style="font-weight: 400; margin-top:.15rem; ">
+                    Where The Fun Never Stops!
+                </h2>
+            </div>
+
+        <section style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; align-items: center;">
+
+          <div class="side-image">
+            
+              <img src="https://javierdzul.github.io/email-assets-WK/spinsamerica/falling_dice_with_stars_988_by_1280.png" alt="businessman posing" 
+              style="
+              width: auto; 
+              height: 100%; 
+              max-height: 58vw; 
+              
+
+
+              ">
+
+          </div>
+          
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; max-width: 500px;">
+
+           
+
+            <div class="container" >
+              <h1 class="log" style="font-weight: 800; margin-top:.15rem;">
+                    <span style="color: white;">
+                      SPINS 
+                    </span>
+                    <span style="color: #ffb86c;">
+                      AMERICA
+                    </span>
+                </h1>
+
+              <div class="logo">
+                <!-- 
+                    <img src="https://javierdzul.github.io/email-assets-WK/newz4today/newz4today_logo_1024_by_334.png" alt="Newz4Today Logo" style="width: 100%; height: auto; max-width: 200px;">
+                  -->
+                </div>
+                <h1>
+                  <span class="span_s" style="color: #efefef; font-weight: 800; font-size: 4.5vw;">
+                    200%
+                  </span>
+                  <span class="span_s" style="color: #ffb86c; font-weight: 800; font-size: 4.5vw; text-shadow: 0 0 4px #fff, 0 0 2px #ffb86c;">
+                    EXTRA
+                  </span>
+                  <span class="span_s" style="color: #efefef; font-weight: 800; font-size: 4.5vw;">
+                    +30                     
+                  </span>
+                  <span class="span_s" style="color: #ffb86c; font-weight: 800; font-size: 4.5vw; text-shadow: 0 0 4px #fff, 0 0 2px #ffb86c;">
+                    FREE
+                  </span>
+                  <span class="span_s" style="color: #efefef; font-weight: 800; font-size: 4.5vw;">
+                    SC                   
+                  </span>
+                </h1>
+                <p>Join To Our Community Today!</p>
+                <form>
+                    <input type="text" id="firstname" name="firstname" placeholder="Full Name" required>
+                    <input type="email" id="Email" name="Email" placeholder="Email Address" required>
+                    <button type="submit">Subscribe Now</button>
+
+
+                    <div>
+
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <a href="Documents/Newz4Today_T&C.pdf" target="_blank" > Terms &amp; Conditions</a>
+                    </div>
+                    
+
+                </form>
+                <div class="privacy">
+                    We respect your <a style="text-decoration: none; color: #a911b1;" href="Documents/Newz4Today_PrivacyPolicy.pdf" target="_blank">privacy</a> . Unsubscribe at any time.
+                </div>
+            </div>
+            
+          </div>
+
+        </section>
+        
+            
+        <footer >
+            <div style="width: 100%; max-width: 1000px; margin: 0 auto; padding-top: 1.5rem;">
+                <button id="footer-toggle" style="background: none; border: none; color: #7200af; font-size: 1rem; cursor: pointer; margin: 0 auto; display: block; padding: 0.5rem 0;">
+                <span style="padding: 5px;">
+
+                  Show Legal & Privacy Info ▼
+                </span>
+                </button>
+                <div id="footer-content" class="footer-content" style=" display: flex; flex-direction: column; justify-content: center; align-content: center; text-align: center; max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+                    <h3>Newz4Today 2025 All Rights Reserved | Complied with GDPR rules and regulation | 
+                        <a href="Documents/Newz4Today_T&C.pdf" target="_blank"> Terms &amp; Conditions</a>
+                    </h3>
+                    <p>
+                        Newz4Today is available only to persons older than 21 years of age, or the legal age of majority in their jurisdiction, whichever is greater. You will be responsible for ensuring that you do not violate any laws of your jurisdiction, including but not limited to copyright laws.
+                        Individuals that register their personal details with Newz4Today agree to receive newsletters and bonus offers, including but not limited to gambling-related newsletters. Newz4Today contains third-party content about, and links to, third parties and their websites that are not owned or controlled by Newz4Today. 
+                        Newz4Today deoes not accept wager of any kind, and does not endorse any activity that is illegal in the jurisdiction of the user and or results in financial loss to the user.
+                        Newz4Today accepts not liability for any loss or damage that may be incurred by you as a result of your use of the site, including but not limited to money loesses, and by using this website and its services you agree that this shall be done at your own risk.
+                        Newz4Today has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party content or websites or any of their contents.
+                        Newz4Today has a strong stand against spamming. Click here to read our
+                        <a href="Documents/Newz4Today_PrivacyPolicy.pdf" target="_blank">Privacy Policy.</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+            const toggleBtn = document.getElementById('footer-toggle');
+            const span = toggleBtn.querySelector('span')
+            const footerContent = document.getElementById('footer-content');
+            let expanded = false;
+            toggleBtn.addEventListener('click', function() {
+                expanded = !expanded;
+                if (expanded) {
+                footerContent.style.maxHeight = " 35vh ";
+                footerContent.style.marginTop = " 15px ";
+                span.textContent = 'Hide Legal & Privacy Info ▲';
+                } else {
+                footerContent.style.maxHeight = "0";
+                span.textContent = 'Show Legal & Privacy Info ▼';
+                }
+            });
+        </script>
+            
+    </main>
+</body>
+        
+        
+</html>
